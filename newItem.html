@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Item </title>
+    <link href="newItem.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <nav role="navigation">Nav</nav>
+        <main role="main">
+            <header>
+                <h1>
+                    New Item
+                </h1>
+            </header>
+            <section>
+                <form action="upload.php" method="post" enctype="multipart/form-data" id="signup">
+                    Select image to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+
+                <br><br>
+
+                   <label for="nickname">
+                       Nickname
+                   </label>
+                   <input id="nickname" name="nickname" type="text" placeholder="Nickname" required>
+
+                <br><br>
+                   <section class="season">
+                        <label for="season">
+                            Season(s)
+                        </label>
+                    <br>
+                        <input id="season" type="checkbox" value="winter">Winter 
+                        
+                        <input id="season" type="checkbox" value="spring">Spring
+                        
+                        <input id="season" type="checkbox" value="summer"> Summer
+                        
+                        <input id="season" type="checkbox" value="fall">Fall 
+                    <br><br>
+                    </section>
+                    <section class="categories">
+
+                    </section>
+
+                <input id="favorite" type="checkbox" value="favorite"> Favorite?
+                    
+
+                <br><br>
+                    <input type="submit" value="Add Item" name="submit">
+                
+                    </form>
+            </section>
+        </main>
+        <footer>
+            Footer
+        </footer>
+  </body>
+</html>
